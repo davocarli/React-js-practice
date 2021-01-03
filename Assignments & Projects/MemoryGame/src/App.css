@@ -1,0 +1,23 @@
+body, #root {
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+#memory-game {
+  width: 100%;
+  max-width: min(100%, 110vh);
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+}
+.memory-square {
+  width: 25%;
+  max-width: 30vh;
+  padding-top: min(25%, 30vh);
+  border: 2px solid black;
+  background-color: lightgrey;
+  display: inline-block;
+}
+strong {
+  margin-right: 15px;
+}
