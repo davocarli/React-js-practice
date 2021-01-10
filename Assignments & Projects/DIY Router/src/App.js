@@ -16,6 +16,11 @@ class DIYRouter extends React.Component {
     }
     this.handleClick = this.handleClick.bind(this);
     this.coffeescript = this.coffeescript.bind(this);
+    this.onURLChange = this.onURLChange.bind(this);
+    window.addEventListener('popstate', this.onURLChange);
+  }
+  onURLChange(e) {
+    this.forceUpdate();
   }
   handleClick(e) {
     e.preventDefault();
